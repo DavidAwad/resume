@@ -1,4 +1,4 @@
-%% start of file `resume.tex'.
+ %% start of file `resume.tex'
 
 \documentclass[12pt,a4paper,sans]{moderncv} % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
@@ -14,17 +14,17 @@
 %\DeclareMathSizes{<surrounding text size>}{<math text size>}{<math script size>}{<math scriptscript size>}
 
 % character encoding
-\usepackage[utf8]{inputenc}       
+\usepackage[utf8]{inputenc} 
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.90]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}  % if you want to change the width of the column with the dates
 
 \usepackage{import}
 
 \name{David}{Awad}
 
-\title{Curriculum Vitae}
+% \title{Curriculum Vitae}
 
 \phone[mobile]{732-925-4874}   
 
@@ -36,7 +36,7 @@
 
 \address{Edison, NJ, 08817}{}{}
 
-\quote{"Maybe our favorite quotations say more about us than the stories and people we're quoting"}
+% \quote{"Maybe our favorite quotations say more about us than the stories and people we're quoting"}
 
 % beginning of the document
 
@@ -44,7 +44,9 @@
 
 \makecvtitle
 
-\textbf{B.S. Computer Science Undergraduate Major, Minoring in Music and Philosophy. May, 2016}
+\textbf{Bachelors of Science in Computer Science May, 2016}
+
+\textbf{Bachelors of Arts in Physics, May, 2016}
 
 \section{Experience}
 
@@ -52,16 +54,17 @@
 
 \begin{itemize}
 
-\item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{MailChimp}}{Infrastructure Engineer}{Atlanta, Georgia}{}{\vspace{3pt} Building Internal Tools to keep track of all of our production hardware which provided a rest API to automate the provisioning and deployment our datacenters containing over 240 production servers each; as well as Extensive monitoring of all server traffic, and load balancing as they currently receive over 6,000 requests per second. Using performance monitoring over time, performed data research on the size vs. query speed to improve efficiency by about 6\% on our dedicated database production and standby servers.}}
+\item{\cventry{September 2015 -- }{\href{http://codecademy.com/}{Codecademy}}{Engineering Mentor}{New York City, New York }{}{\vspace{3pt} I work part time as a consultant to assist those learning to code for the first time online through Codecademy by helping them by work through potential errors in code as well as teaching anything from basic programming concepts to computer science and programming language specifics such as Python, Ruby and JavaScript. }}
 
 
-\item{\cventry{June 2015 -- July 2015}{\href{http://www.cdc.gov/}{United States Center for Disease Control and Prevention.}}{Software Engineering Consultant}{Atlanta, Georgia}{}{\vspace{3pt} I was responsible with the accessibility and management of all available open health data by drafting an entirely new API and assisting with the technical implementations of new data storage solutions.}}
+\item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{MailChimp}}{Infrastructure Engineer}{Atlanta, Georgia}{}{\vspace{3pt} I was given the task of improving and building internal tools to keep track of all of our production hardware and a rest API to automate the provisioning and deployment our production datacenter servers as well as Extensive monitoring of all server traffic, and load balancing as they currently receive over 6,000 requests per second. In addition I was using performance monitoring and performed data research on the size vs. query speed to improve efficiency by at least 6\% on our dedicated database servers for paid users.}}
 
-\item{\cventry{December 2014 -- May 2015}{\href{http://addteq.com}{Addteq Inc.}}{Software Development Intern}{Princeton, New Jersey}{}{\vspace{3pt} I was responsible for completely redesigning and rebuilding our career portal from scratch using AngularJS and jQuery. Writing various unit tests to run on our production servers that will ensure performance on our commercial software. Setting up and deploying the ELK stack along with logstash forwarder and using it's interface to design effective routine server analytics. Unit testing for our web applications with CasperJS, PhantomJS and scanning utilities like WPScan to record errors on our JIRA. Basic Linux Administration as well as multiple different developer infrastructure builds such as configuring Apache-Tomcat with Jenkins or Stash and Bamboo.}}
 
-\vspace{6pt}
+\item{\cventry{June 2015 -- July 2015}{\href{http://www.cdc.gov/}{United States Center for Disease Control and Prevention.}}{Software Engineering Consultant}{Atlanta, Georgia}{}{\vspace{3pt} I assisted in drafting an entirely new REST API to replace the SOAP API for the CDC's open health data.}}
 
-\item{\cventry{November 2014 -- April 2015}{\href{http://www.rwjuh.edu/rwjuh/home.aspx}{Robert Wood Johnson University Hospital}}{Lead App Developer}{New Brunswick, New Jersey}{}{\vspace{3pt}I worked pro bono as the lead developer on a Python Django application to be used internally to improve the efficiency of their service and organization for their busy attending doctors and pharmacists. I led a tight team of usually two to three other developers at a time organized through small sprints over GitHub.}}
+\item{\cventry{December 2014 -- May 2015}{\href{http://addteq.com}{Addteq Inc.}}{Software Engineer}{Princeton, New Jersey}{}{\vspace{3pt} I was responsible for completely redesigning and rebuilding our \href{https://nebula.addteq.com/jobs}{career portal} from scratch using AngularJS and jQuery. Writing various unit tests to run on our production servers that will ensure performance on our commercial software.}}
+
+\item{\cventry{November 2014 -- April 2015}{\href{http://www.rwjuh.edu/rwjuh/home.aspx}{Robert Wood Johnson University Hospital}}{Lead App Developer}{New Brunswick, New Jersey}{}{\vspace{3pt}I was the lead developer on a Python Django application to be used internally to improve service and organization for their busy attending doctors and pharmacists. I led a team of usually two to three other developers at a time completing features through small sprints.}}
 
 \end{itemize}
 
@@ -75,7 +78,7 @@
 
 \begin{itemize}
 
-\item{\textbf{Programming / Scripting Languages:} \textit{C, JavaScript, Python, Java}
+\item{\textbf{Programming / Scripting Languages:} \textit{Python, C, JavaScript, Java, Shell}
 
 \small{}}
 
@@ -89,19 +92,11 @@
 
 \vspace{6pt}
 
-\item{\textbf{Frameworks / Libraries:}\textit{ Flask, Foundation / Bootstrap, jQuery, NodeJS, Android, Stripe, CasperJS, Express.JS, Elixir/Erlang Phoenix, Arduino}
+\item{\textbf{Frameworks / Libraries:}\textit{ Flask, Foundation / Bootstrap, jQuery, React, Android, Angular, Node, Stripe, Express, Casper, Arduino}
 
 \vspace{3pt}
 
-\item{\textbf{Database Systems:}\textit{ MongoDB, mySQL, PostgreSQL} }
-
-\vspace{3pt}
-
-\small{}}
-
-\vspace{6pt}
-
-\item{\textbf{Dev-Ops Tools:}\textit{ Travis-CI, Vagrant, Puppet, Subversion, Docker, Stash, Jenkins}
+\item{\textbf{Database Systems:}\textit{ MongoDB, PostgreSQL, MySQL, Redis} }
 
 \vspace{3pt}
 
@@ -109,7 +104,15 @@
 
 \vspace{6pt}
 
-\item{\textbf{Coursework:}\textit{ Graduate Operating Systems Design, Systems Programming, Computer Architecture, Database Management Systems, Data Structures, Web Design} }
+\item{\textbf{Infrastructure Tools:}\textit{ Travis-CI, Vagrant, Puppet, Docker, Stash, Jenkins }
+
+\vspace{3pt}
+
+\small{}}
+
+\vspace{6pt}
+
+\item{\textbf{Coursework:}\textit{ Artificial Intelligence, Algorithms, Graduate Operating Systems Design, Systems Programming, Computer Architecture, Principles of Programming Languages, Database Management Systems, Discrete Mathematics and Discrete Probability, Data Structures, Advanced Web Design} }
 
 \vspace{3pt}
 
@@ -121,26 +124,28 @@
 
 \vspace{10pt}
 
+% PAGE BREAK HERE. 
+
 \subsection{Personal Projects}
 
 \vspace{5pt}
 
 \begin{itemize}
 
-\item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets was an app meant to gather insights about specific kinds of people in any geographic location using twitter and machine learning. It would query twitter for location based data and then process it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
+\item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
 
 \vspace{5pt}
 
 
-\item{\textbf{\href{http://spaceshare.me}{Spaceshare.me}} \textit{ SpaceShare is a project I created so that I could quickly and easily share files between any computers by simply associating an integer with whatever file you need. It uses Python-Flask with MongoDB and Foundation.}}
+\item{\textbf{\href{http://spaceshare.me}{Spaceshare.me}} \textit{ SpaceShare is a project I created so that I could quickly and easily share files between any computers by simply associating an integer with whatever file you choose. It's built on Python-Flask Foundation, React and Foundation client-side, while files are stored in a GridFS MongoDB through Asynchronous Distributed Celery tasks with Redis as a broker.}}
 
 \vspace{5pt}
 
-\item{\textbf{\href{https://github.com/davidawad/waves}{Waves}}\textit{ The Wave project is a social network for your brainwaves. It utilized an android app that interfaced with the Muse headband on android and allowed you to instantaneously tweet your brainwaves at anytime. It supported twitter, facebook, or github authentication. It was built using NodeJS, Express.JS, Jade, LESS, MongoDB, Twitter, Android and the Muse brainwave headband.}}
+\item{\textbf{\href{https://github.com/davidawad/waves}{Waves}}\textit{ The Wave project is a social network for your brainwaves. It also utilized an Android app that interfaced with the Muse headband so you could instantaneously tweet your brainwaves at anytime. It supported Twitter, Facebook, or GitHub authentication. It was built using NodeJS, Express.JS, Jade, LESS, MongoDB, Twitter, Android and the Muse brainwave headband.}}
 
 \vspace{5pt}
 
-\item{\textbf{I have many other Free and Open Source Software Projects available on \href{https://github.com/davidawad}{GitHub}.}}
+\item{\textbf{I have over 100 Free and Open Source Software Projects available on \href{https://github.com/davidawad}{GitHub}.}}
 
 \vspace{5pt}
 
@@ -149,22 +154,21 @@
 \subsection{Awards and Extra Curricular Activities}
 
 \vspace{5pt}
-
 \begin{itemize}
 
-\item{\cventry{}{Second Place HackNJIT '14}{Hackathon Prizes}{}{ {Third Place HackRU '13, IBM Bluemix Prize HackNY '15} }{}}
+\item{\cventry{}{Various Prizes}{Hackathon Experience}{Major League Hacking}{{}} {Second Place Overall HackNJIT '14, Third Place Overall HackRU '13, IBM Bluemix Prize HackNY '15, CyanogenMod Prize HackThePlanet '15}}
 
-\item{\cventry{}{Scholarship Recipient}{\href{https://access.rutgers.edu/lsamp}{LSAMP} Scholar}{}{\textit{}}{}}  
+% \item{\cventry{}{Scholarship Recipient}{\href{https://access.rutgers.edu/lsamp}{LSAMP} Scholar}{}{\textit{}}{}}  
 
-\item{\cventry{}{Teaching Assistantship}{TA Experience}{}{\textit{}}{PSY 90 introductory Positive Psychology course Course on happiness.}}  
+% \item{\cventry{}{Teaching Assistantship}{TA Experience}{}{\textit{}}{PSY 90 introductory Positive Psychology course Course on happiness for first year students.}}  
 
-\item{\cventry{}{Rutgers University Judo Club}{Public Relations Manager and Web Designer}{}{ {Manage and Improve the representation of the Rutgers Judo Club} }{}}
+\item{\cventry{}{ \href{http://pleasethrow.me}{Rutgers University Judo Club}}{Public Relations Manager, Web Designer and Developer }{}{ {Manage and Improve the representation of the Rutgers Judo Club} }{}}
 
 \item{\cventry{}{ \href{http://gleeclub.rutgers.edu/}{Rutgers University Glee Club}}{Technological Coordinator}{}{{Responsible for maintaining all the technologies.}}{Such as the website, IT support and Data Management, Email Lists, etc.}}
 
 \item{\cventry{}{Rutgers University Student Alliance of Computer Scientists}{\href{http://hackru.org/}{Hackathon Organizer} } {}{ {A member of the team responsible for } }{all organizational aspects of planning the Bi-Annual Hackathon, HackRU.}}
 
-\item{\cventry{}{Rutgers University Security of Information Club}{Founding Member}{}{ { } }{}}
+\item{\cventry{}{Rutgers University Security of Information Club}{Founding Member}{}{{specializing in cyber security for embedded systems.}}{}}
 
 \vspace{2pt}
 
@@ -179,20 +183,19 @@
 \begin{itemize}
 
 
-\item{I have been trained in singing for over seven years, Being in numerous choral groups I've traveled on tour to multiple cities on the east coast for performances and competitions such as Chicago, Illinois, and more recently Baltimore, Maryland. I currently study Judo and have competed in multiple Judo tournaments with the Rutgers University Judo Team.} 
+\item{I have been trained in singing for over seven years. Being in numerous choral groups I've traveled on tour to multiple cities on the east coast for performances and competitions such as Chicago, Illinois, and more recently Baltimore, Maryland. I also study Judo and have competed in multiple competitive tournaments with the Rutgers University Judo Team.} 
 
-\item{In high school I had done four years of Musical and Improvisational Theater, having placed in the top 5 in the STANJ competition for Comedic Scenes. I was also on the varsity soccer team for three years.}
-
-% \item{References available upon request.}
+\item{In high school I performed in four years of Musical and Improvisational Comedic Theater, having placed in the top 5 in the STANJ competition for Comedic Scenes. I was also on the varsity soccer team for three years.}
 
 \end{itemize}
 
-%\section{References}
-%\vspace{6pt}
-%\begin{itemize}
-%\item{Up to 4 references available on request}
-%\end{itemize}
-%\vspace{1pt}
+\section{References}
+
+\vspace{6pt}
+\begin{itemize}
+\item{References available on request}
+\end{itemize}
+\vspace{1pt}
 
 \nocite{*}
 \bibliographystyle{plain}
