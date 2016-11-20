@@ -1,172 +1,131 @@
- %% start of file `resume.tex'
+ %Resume of Abaonub David Awad
+ 
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\documentclass[12pt,a4paper,sans]{moderncv} % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
+\documentclass[12pt,a4paper,sans]{moderncv} 
 \moderncvstyle{banking} % options 'casual' (default), 'classic', 'oldstyle' and 'banking'
-
 \moderncvcolor{blue} % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-%\renewcommand{\familydefault}{\sfdefault}         
 
 % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 
 % set size for math ! 
 %\DeclareMathSizes{<surrounding text size>}{<math text size>}{<math script size>}{<math scriptscript size>}
-
-% character encoding
 \usepackage[utf8]{inputenc} 
-
-% adjust the page margins
 \usepackage[scale=0.90]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}  % if you want to change the width of the column with the dates
-
 \usepackage{import}
 
 \name{David}{Awad}
-
 % \title{Curriculum Vitae}
-
-%\phone[mobile]{732-925-4874}   
-
+\phone[mobile]{732-925-4874}
 \email{contact@davidawad.com}
-
 \homepage{www.davidawad.com}
-
 \extrainfo{\url{https://github.com/davidawad/}}
-
-\address{Edison, NJ, 08817}{}{}
-
-% \quote{"Maybe our favorite quotations say more about us than the stories and people we're quoting"}
-
-% beginning of the document
+\address{U.S. Citizen of Edison, NJ, 08817}{}{}
+% \quote{"Maybe our favorite quotations say more about us than the stories and people we're quoting" - John Green}
 
 \begin{document}
-
 \makecvtitle
 
-\textbf{Bachelors of Science in both Computer Science and Physics May, 2016}
+\section{Education}
+\begin{itemize}
+\item{\textbf{Bachelors of Science, Computer Science and Physics -- Rutgers University -- May 2016}} 
+\item{\textbf{Nanodegree, Self Driving Car Engineering  -- Udacity -- August 2017}}
+\end{itemize}
 
+% EXPERIENCE
 \section{Experience}
-
-\vspace{6pt}
-
 \begin{itemize}
 
-% \item{\cventry{November 2015 -- }{\href{http://mlh.io/}{Major League Hacking}}{Hackathon Coach}{New York City, New York}{}{\vspace{3pt} I currently work as a representative of MLH, putting together and throwing events with organizers and engineering companies at Hackathons across the world.}}
+\item{\cventry{May 2016 -- November 2016}{\href{http://tumblr.com/}{Tumblr}}{Release Engineer}{New York City}{}{
+\vspace{3pt} 
+I develop and maintain Tumblr internal deploy processes, developer build tools, source control wrappers, deploy reporting and statistics, and internal build group productivity tools. I Develop web based tools to report on build, branch, and project status for use by developers and product managers throughout the company. }}
+
+\item{\cventry{November 2015 -- }{\href{http://mlh.io/}{Major League Hacking}}{Hackathon Coach}{New York City}{}{
+\vspace{3pt} 
+I work as a representative of Major League Hacking and travel internationally to different student hackathons around the world. There is a strong focus on establishing good outward facing public relations for MLH as well as preparing both technical and nontechnical presentations on partner company technology. I mentor engineering students and troubleshoot all kinds of different software and hardware projects at various events along with other engineers and developers from other companies across the industry.
+}}
+
+%\item{\cventry{October 2015 -- May 2016}{\href{http://sendgrid.com/}{SendGrid}}{Developer Evangelist}{Denver, Colorado Remotely}{}{\vspace{3pt} I travel across the country as a representative of SendGrid's engineering team. There was a strong focus on establishing good outward facing public relations for SendGrid as well as preparing both technical and nontechnical presentations on SendGrid's technology and working both on open source and with client company developers and engineers using SendGrid's technology for implementing and prototyping ideas, and applications at various developer conferences, hackathons, and events.}}
 
 
-\item{\cventry{October 2015 -- }{\href{http://sendgrid.com/}{SendGrid}}{Developer Evangelist}{Denver, Colorado}{}{\vspace{3pt} I travel across the country as a representative of SendGrid's engineering team. There was a strong focus on establishing good outward facing public relations for SendGrid as well as preparing both technical and nontechnical presentations on SendGrid's technology and working both on open source and with client company developers and engineers using SendGrid's technology for implementing and prototyping ideas, and applications at various developer conferences, hackathons, and events.}}
+% TODO PAST TENSE, MAKE WORDING CONSISTENT
+\item{\cventry{September 2015 -- May 2016}{\href{http://codecademy.com/}{Codecademy}}{Codecademy Advisor}{New York city, Remotely}{}{
+\vspace{3pt} 
+I was a part time teacher for students learning to code for the first time online through Codecademy.comac by helping them by work through potential errors in code as well as teaching anything from basic programming concepts to computer science and programming language specifics such as Python, Ruby and JavaScript. 
+}}
 
+\item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{MailChimp}}{Infrastructure Engineering Intern}{Atlanta}{}{
+\vspace{3pt} Responsible for improving and building internal tools to keep track of all of our production hardware and a rest API to automate the provisioning and deployment our production datacenter servers as well as Extensive monitoring of all server traffic, and load balancing as they currently receive over 6,000 requests per second. In addition I was using performance monitoring and performed data research on the size vs. query speed to improve efficiency by at least 6\% on our dedicated database servers for paid users.
+}}
 
-\item{\cventry{September 2015 -- }{\href{http://codecademy.com/}{Codecademy}}{Engineering Mentor}{Manhattan, New York}{}{\vspace{3pt} I currently work part time as a consultant to assist those learning to code for the first time online through Codecademy by helping them by work through potential errors in code as well as teaching anything from basic programming concepts to computer science and programming language specifics such as Python, Ruby and JavaScript. }}
+%\item{\cventry{June 2015 -- July 2015}{\href{http://www.cdc.gov/}{United States Center for Disease Control and Prevention.}}{Software Engineering Consultant}{Atlanta, Georgia}{}{\vspace{3pt} I assisted in drafting an entirely new REST API to replace an outdated SOAP API accessing the CDC's open health data.}}
 
-
-\item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{MailChimp}}{Infrastructure Engineer}{Atlanta, Georgia}{}{\vspace{3pt} I was given the task of improving and building internal tools to keep track of all of our production hardware and a rest API to automate the provisioning and deployment our production datacenter servers as well as Extensive monitoring of all server traffic, and load balancing as they currently receive over 6,000 requests per second. In addition I was using performance monitoring and performed data research on the size vs. query speed to improve efficiency by at least 6\% on our dedicated database servers for paid users.}}
-
-
-\item{\cventry{June 2015 -- July 2015}{\href{http://www.cdc.gov/}{United States Center for Disease Control and Prevention.}}{Software Engineering Consultant}{Atlanta, Georgia}{}{\vspace{3pt} I assisted in drafting an entirely new REST API to replace the SOAP API for the CDC's open health data.}}
-
-
-\item{\cventry{December 2014 -- May 2015}{\href{http://addteq.com}{Addteq Inc.}}{Software Engineer}{Princeton, New Jersey}{}{\vspace{3pt} I was responsible for completely redesigning and rebuilding our \href{https://nebula.addteq.com/jobs}{career portal} from scratch using AngularJS and jQuery. Writing various unit tests to run on our production servers that will ensure performance on our commercial software.}}
-
+% \item{\cventry{December 2014 -- May 2015}{\href{http://addteq.com}{Addteq Inc.}}{Software Engineering Intern}{Princeton, New Jersey}{}{\vspace{3pt} I was responsible for completely redesigning and rebuilding our \href{https://nebula.addteq.com/jobs}{career portal} from scratch using AngularJS and jQuery. Writing various unit tests to run on our production servers that will ensure performance on our commercial software.}}
 
 % \item{\cventry{November 2014 -- April 2015}{\href{http://www.rwjuh.edu/rwjuh/home.aspx}{Robert Wood Johnson University Hospital}}{Lead App Developer}{New Brunswick, New Jersey}{}{\vspace{3pt}I was the lead developer on a Python Django application to be used internally to improve service and organization for their busy attending doctors and pharmacists. I led a team of usually two to three other developers at a time completing features through small sprints.}}
-
-
 \end{itemize}
 
 \section{Skills}
 
-\vspace{5pt}
-
-\subsection{Technical Skills}
-
-\vspace{5pt}
-
 \begin{itemize}
 
-\item{\textbf{Programming / Scripting Languages:} \textit{Python, C, JavaScript, Java, Bash,  MATLAB, Ruby, Scheme}
-
-\small{}}
-
-\vspace{6pt}
-
-\item{\textbf{Markup Languages:}\textit{ HTML5, CSS3, SASS/SCSS, Markdown, LaTeX, HAML, Jade, XML }
-
+\item{\textbf{Programming / Scripting Languages:} \textit{Python, C, JavaScript, Java, Shell}}
 \vspace{3pt}
 
-\small{}}
-
-\vspace{6pt}
-
-\item{\textbf{Frameworks / Libraries:}\textit{ Flask, Foundation / Bootstrap, jQuery, React, Android, Angular, Node, Stripe, Express, Casper, Arduino}
-
+\item{\textbf{Markup Languages:}\textit{ HTML5, CSS3, SASS/SCSS, Markdown, LaTeX, XML, HAML, Jade }}
 \vspace{3pt}
 
-\item{\textbf{Database Systems:}\textit{ MongoDB, PostgreSQL, MySQL, Redis} }
-
+\item{\textbf{Frameworks / Libraries:}\textit{ Flask, Foundation / Bootstrap, jQuery, React.JS, Android, Angular.JS, Stripe, Express, Casper, Arduino}}
 \vspace{3pt}
 
-\small{}}
-
-\vspace{6pt}
-
-\item{\textbf{Infrastructure Tools:}\textit{ Travis-CI, Vagrant, Puppet, Docker, Stash, Jenkins }
-
+\item{\textbf{Database Systems:}\textit{ Redis, etcd, MongoDB, MySQL}}
 \vspace{3pt}
 
-\small{}}
-
-\vspace{6pt}
-
-\item{\textbf{Coursework:}\textit{ Quantum Computing, Artificial Intelligence, Algorithms, Graduate Operating Systems Design, Systems Programming, Computer Architecture, Principles of Programming Languages, Database Management Systems, Discrete Mathematics and Discrete Probability, Data Structures, Advanced Web Design} }
-
+\item{\textbf{Infrastructure Tools:}\textit{ Jenkins, Travis-CI, Docker, Puppet, Heroku, NGINX, Vagrant, Apache2, Amazon EC2, S3}}
 \vspace{3pt}
 
-\small{}
+\item{\textbf{Graphics Tools:}\textit{ Unity, Blender, GIMP/Photoshop, Inkscape}}
+\vspace{3pt}
 
-\vspace{6pt}
+\item{\textbf{Coursework:}\textit{ Quantum Mechanics, Quantum Computing, Artificial Intelligence, Algorithms, Operating Systems Design, Systems Programming, Computer Architecture, Electricity and Magnetism, Programming Languages, Database Management Systems, Astrophysics, Discrete Mathematics, Discrete Probability, Data Structures, Web Design}}
 
 \end{itemize}
 
-\vspace{10pt}
-
-% PAGE BREAK HERE. 
+% PAGE BREAK HERE.
 
 \subsection{Personal Projects}
-
 \vspace{5pt}
 
 \begin{itemize}
 
-\item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
-
+\item{\textbf{\href{https://github.com/davidawad/vcluster}{vcluster}}\textit{ vcluster leverages the convenience of Vagrant to create a cluster of Virtual Machines from the command line that are all running different operating systems that you can specify using vagrant; this allows you to unittest for multiple platforms from a convenient CLI and a simple YAML file.}}
 \vspace{5pt}
 
-\item{\textbf{\href{https://github.com/davidawad/vcluster}{vcluster}}\textit{ vcluster leverages the convenience of Vagrant to create a cluster of Virtual Machines from the command line that are all running different operating systems that you can specify using vagrant; this allows you to unittest for multiple platforms from a convenient CLI and a simple YAML file.}}
+% begin comment of proj.
+\iffalse 
+\item{\textbf{\href{http://github.com/davidawad/Quantum-Simulator}{Quantum Simulator}} \textit{ I currently maintain a quantum computation simulator written in python to replicate the effects of quantum logical gates on quantum bits in order to asses changes in amplitudes and experiment on quantum algorithms.}}
+\vspace{5pt}
+\fi
+% end comment of quantum proj
 
+\item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
 \vspace{5pt}
 
 \item{\textbf{\href{http://github.com/davidawad/blocky}{blocky}} \textit{ Blocky is a small, well polished android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. It uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables quick ease of use and convenience to accept payments on your mobile phone, while also solving the problem of having your Bitcoin wallet exclusively on your phone. This project won the Cyanogen Prize at HackThePlanet in 2015.}}
-
 
 \vspace{5pt}
 
 \item{\textbf{I have over 100 Free and Open Source Software Projects available on \href{https://github.com/davidawad}{GitHub}.}}
 
-\vspace{5pt}
-
 \end{itemize}
 
 \subsection{Awards and Extra Curricular Activities}
-
-\vspace{5pt}
 \begin{itemize}
 
 \item{\cventry{}{Various Prizes}{Hackathon Experience}{Major League Hacking}{{}} {Second Place Overall HackNJIT '14, Third Place Overall HackRU '13, IBM Bluemix Prize HackNY '15, CyanogenMod Prize HackThePlanet '15}}
 
-% \item{\cventry{}{Scholarship Recipient}{\href{https://access.rutgers.edu/lsamp}{LSAMP} Scholar}{}{\textit{}}{}}  
-
+% \item{\cventry{}{Scholarship Recipient}{\href{https://access.rutgers.edu/lsamp}{LSAMP} Scholar}{}{\textit{}}{}}
 % \item{\cventry{}{Teaching Assistantship}{TA Experience}{}{\textit{}}{PSY 90 introductory Positive Psychology course Course on happiness for first year students.}}  
 
 \item{\cventry{}{ \href{http://www.rwjuh.edu/rwjuh/home.aspx}{Robert Wood Johnson}}{Lead App Developer }{}{ {Pro Bono lead developer} }{I worked pro bono as the lead developer on a Python Django application that improved service and organization for attending doctors at the promise clinic which provides free healthcare to the residents of New Brunswick.}}
@@ -181,23 +140,20 @@
 
 \item{\cventry{}{Rutgers University Security of Information Club}{Founding Member}{}{{specializing in cyber security for embedded systems.}}{}}
 
-\vspace{2pt}
-
 \end{itemize}
 
-\vspace{6pt}
-
-
+% research blurb
+\iffalse
 \section{Research}
-\vspace{6pt}
 \begin{itemize}
-\item{I currently study research under professor Abdelslam Boularias doing research in computer vision. We have been working towards using the leap motion and various machine learning techniques to create robots that can assist and replicate the movements of the the human hands.}
+\item{I currently assist with research under professor Abdelslam Boularias doing research in computer vision. We have been working towards using the leap motion and various machine learning techniques to create robots that can assist and replicate physical labor and construction of objects being performed by the human hands.}
 \end{itemize}
+\fi 
+% end comment
 
-\iffalse % begin comment
+\iffalse % begin comment for interests section
 
 \section{Interests}
-\vspace{6pt}
 \begin{itemize}
 \item{I have been trained in singing for over seven years. Being in numerous choral groups I've traveled on tour to multiple cities on the east coast for performances and competitions such as Chicago, Illinois, and more recently Baltimore, Maryland. I also study Judo and have competed in multiple competitive tournaments with the Rutgers University Judo Team.} 
 
@@ -207,9 +163,6 @@
 \fi
 
 % \iffalse % begin comment
- 
-
-
 % \fi % end comment
 
 \nocite{*}
