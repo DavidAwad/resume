@@ -1,18 +1,19 @@
- %Resume of Abaonub David Awad
+% Resume of Abaonub David Awad
  
 % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\documentclass[12pt,a4paper,sans]{moderncv} 
+\documentclass[12pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking} % options 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 
 % set size for math ! 
-%\DeclareMathSizes{<surrounding text size>}{<math text size>}{<math script size>}{<math scriptscript size>}
+%\DeclareMathSizes{<surrounding text size>}{<math text size>}{<math script size>}{<math script size>}
 \usepackage[utf8]{inputenc} 
 \usepackage[scale=0.90]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}  % if you want to change the width of the column with the dates
+% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}
 \usepackage{import}
 
 \name{David}{Awad}
@@ -34,29 +35,46 @@
 \end{itemize}
 
 % EXPERIENCE
+% for help with wording, check https://www.linkedin.com/in/chuckr
 \section{Experience}
 \begin{itemize}
 
-\item{\cventry{May 2016 -- November 2016}{\href{http://tumblr.com/}{Tumblr}}{Release Engineer}{New York City}{}{
-\vspace{3pt} 
-I develop and maintain Tumblr internal deploy processes, developer build tools, source control wrappers, deploy reporting and statistics, and internal build group productivity tools. I Develop web based tools to report on build, branch, and project status for use by developers and product managers throughout the company. }}
+\item{\cventry{May 2016 -- November 2016}{\href{http://tumblr.com/}{Tumblr}}{Software Release Engineer}{New York City}{}{
+\vspace{0pt}
+I developed and maintained Tumblr internal deploy processes, developer build tools, source control wrappers, deploy reporting and statistics, and internal build group productivity tools. I Develop web based tools to report on build, branch, and project status for use by developers and product managers throughout the company. I worked with a lot of containerized services and deployments on Apache Mesos, using Docker and Python.  
+}}
 
 \item{\cventry{November 2015 -- }{\href{http://mlh.io/}{Major League Hacking}}{Hackathon Coach}{New York City}{}{
-\vspace{3pt} 
-I work as a representative of Major League Hacking and travel internationally to different student hackathons around the world. There is a strong focus on establishing good outward facing public relations for MLH as well as preparing both technical and nontechnical presentations on partner company technology. I mentor engineering students and troubleshoot all kinds of different software and hardware projects at various events along with other engineers and developers from other companies across the industry.
+\vspace{0pt} 
+I travel internationally to college student hackathons as an representative of Major League Hacking. This comes with a lot of experience giving both technical and nontechnical presentations to promote brand recognition and good outward facing public relations. I assist engineering students with rapidly prototyping their ideas and troubleshoot all kinds of different software and hardware projects at various events along with other engineers and developers from other companies across industry.
 }}
+
+
+% 1/200X - 12/201Y - SuperCoolStartup - Co-Founder and Technical Lead
+% Brief company description, including funding and other measurable forms of success
+% Brief description of management duties
+% Brief description of technical duties and technologies used
+
+% For example: "Very Customer Focused" vs. "Customer Focus: During one project dealt with the client on a weekly basis, clarifying requirements and demonstrating prototypes over the entire project lifespan. This helped to build trust and contributed to being offered further work from this client."
+
+
+% \item{\cventry{October 2015 --}{\href{http://arm.com/}{Archangel Raphael's Mission}}{Co-Founder and Technical Lead}{New Brunswick}{}{
+% \vspace{0pt} 
+% }}
+
 
 %\item{\cventry{October 2015 -- May 2016}{\href{http://sendgrid.com/}{SendGrid}}{Developer Evangelist}{Denver, Colorado Remotely}{}{\vspace{3pt} I travel across the country as a representative of SendGrid's engineering team. There was a strong focus on establishing good outward facing public relations for SendGrid as well as preparing both technical and nontechnical presentations on SendGrid's technology and working both on open source and with client company developers and engineers using SendGrid's technology for implementing and prototyping ideas, and applications at various developer conferences, hackathons, and events.}}
 
-
 % TODO PAST TENSE, MAKE WORDING CONSISTENT
+% TODO add ARM to resume
 \item{\cventry{September 2015 -- May 2016}{\href{http://codecademy.com/}{Codecademy}}{Codecademy Advisor}{New York city, Remotely}{}{
-\vspace{3pt} 
-I was a part time teacher for students learning to code for the first time online through Codecademy.comac by helping them by work through potential errors in code as well as teaching anything from basic programming concepts to computer science and programming language specifics such as Python, Ruby and JavaScript. 
+\vspace{0pt} 
+Provided guidance and support for students first learning to code through the codecademy platform by helping them by work through potential errors in code as well as teaching anything from basic programming to computer science and data structures. Tracked issues and worked with product team for consistent improvement of product based on user feedback.
 }}
 
 \item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{MailChimp}}{Infrastructure Engineering Intern}{Atlanta}{}{
-\vspace{3pt} Responsible for improving and building internal tools to keep track of all of our production hardware and a rest API to automate the provisioning and deployment our production datacenter servers as well as Extensive monitoring of all server traffic, and load balancing as they currently receive over 6,000 requests per second. In addition I was using performance monitoring and performed data research on the size vs. query speed to improve efficiency by at least 6\% on our dedicated database servers for paid users.
+\vspace{0pt} 
+Responsible for improving and building internal tools to keep track of all of our production hardware and a rest API to automate the provisioning and deployment our production datacenter servers as well as Extensive monitoring of all server traffic, and load balancing as they currently receive over 6,000 requests per second. In addition I was using performance monitoring and performed data research on the size vs. query speed to improve efficiency by at least 6\% on our dedicated database servers for paid users.
 }}
 
 %\item{\cventry{June 2015 -- July 2015}{\href{http://www.cdc.gov/}{United States Center for Disease Control and Prevention.}}{Software Engineering Consultant}{Atlanta, Georgia}{}{\vspace{3pt} I assisted in drafting an entirely new REST API to replace an outdated SOAP API accessing the CDC's open health data.}}
@@ -112,7 +130,9 @@ I was a part time teacher for students learning to code for the first time onlin
 \item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
 \vspace{5pt}
 
-\item{\textbf{\href{http://github.com/davidawad/blocky}{blocky}} \textit{ Blocky is a small, well polished android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. It uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables quick ease of use and convenience to accept payments on your mobile phone, while also solving the problem of having your Bitcoin wallet exclusively on your phone. This project won the Cyanogen Prize at HackThePlanet in 2015.}}
+\item{\textbf{\href{http://github.com/davidawad/blocky}{blocky}} \textit{ 
+Blocky is a small, well polished android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. It uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables quick ease of use and convenience to accept payments on your mobile phone, while also solving the problem of having your Bitcoin wallet exclusively on your phone. This project won the Cyanogen Prize at HackThePlanet in 2015.
+}}
 
 \vspace{5pt}
 
@@ -155,6 +175,7 @@ I was a part time teacher for students learning to code for the first time onlin
 
 \section{Interests}
 \begin{itemize}
+
 \item{I have been trained in singing for over seven years. Being in numerous choral groups I've traveled on tour to multiple cities on the east coast for performances and competitions such as Chicago, Illinois, and more recently Baltimore, Maryland. I also study Judo and have competed in multiple competitive tournaments with the Rutgers University Judo Team.} 
 
 \item{In high school I performed in four years of Musical and Improvisational Comedic Theater, having placed in the top 5 in the STANJ competition for Comedic Scenes. I was also on the varsity soccer team for three years.}
@@ -169,3 +190,7 @@ I was a part time teacher for students learning to code for the first time onlin
 \bibliographystyle{plain}
 \bibliography{publications}         
 \end{document}
+
+
+% Resume Writing Resources
+% http://softwareengineering.stackexchange.com/questions/103194/how-do-you-report-startup-experience-on-your-resume
