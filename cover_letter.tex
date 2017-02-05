@@ -1,0 +1,63 @@
+% Cover Letter of Abanoub David Awad
+% \title{Cover_Letter_DavidAwad}
+\documentclass[12pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking} % options 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}    % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[utf8]{inputenc} 
+\usepackage[scale=0.90]{geometry}
+\usepackage{import}
+
+
+% Declare new commands 
+ % sample new command
+\newcommand{\COMPANY}{CyberCoders}
+% new command for tabs
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\name{David}{Awad}
+
+\phone[mobile]{732-925-4874}
+\email{contact@davidawad.com}
+\homepage{www.davidawad.com}
+\extrainfo{\url{https://github.com/davidawad/}}
+\address{U.S. Citizen of Edison, NJ, 08817}{}{}
+
+\begin{document}
+
+% Letter Addressed to
+\recipient{\COMPANY{}}{ 90 Park Ave \#1702\\ New York, NY 10016} 
+% Letter date
+\date{\today}
+\opening{\textbf{Dear recruiting team at \COMPANY{},}} 
+
+% closing has to be here?
+\closing{Thank you for taking the time to consider me. It means the world to me and I hope to hear from you soon.}
+ 
+\makelettertitle % Print letter title
+
+Please accept my resume in the hopes of exploring the possibilities of joining you.
+
+\tab My first engineering position was as a sophomore in 2014. I have went on to write source control wrappers, query size optimization scripts, and monitoring and internal tools for companies such as MailChimp, Codecademy, and Tumblr. I am fortunate to have had the opportunity to grow in all of these different roles and work on all kinds of different problems from web application development to software release engineering. I’ve had the opportunity to communicate with plenty of engineers and non-engineers alike.
+
+\tab Known for excellent public speaking skills, I have been given the opportunity as a Developer Evangelist for SendGrid and a Hackathon Coach with Major League Hacking to travel to different college student hackathons across the United States and Canada. I’ve learned a diverse set of skills from event management and organization mentoring all kinds of engineering ideas and personal projects from superconducting qubits to torrent based datacenter deployment prototypes.
+
+\tab My technical expertise includes cross-platform proficiency; fluency in various scripting/programming languages (including C, Python, JavaScript, Java, HTML/CSS and SQL);  I’ve built plenty of fun personal projects with technology like Unity, VR, GIMP, and basic NLP for poetry generation. I have an advanced knowledge of developer applications, tools, methodologies and best practices (including OOD, client/server architecture and test automation). I enjoy rock-solid continuous integration and deployment using tools like Travis, Jenkins, Docker, Mesos, SaltStack and CoreOS.
+
+\tab It is my belief that my experience teaching and developing user-friendly solutions on time would enable me to step into an engineering role at \COMPANY{} and hit the ground running.
+Feel free to reach out to me at (732) 925-4874. Thank you so much for your time and I look forward to hearing from you!
+
+% \makeletterclosing % Print letter signature
+
+\begin{flushright}
+Sincerely, yours \\
+	\textbf{Abanoub David Awad}
+\\
+\includegraphics[width=50mm]{sig.png}
+\end{flushright}
+
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}         
+\end{document}
