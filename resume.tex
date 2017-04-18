@@ -1,23 +1,52 @@
 % Resume of Abanoub David Awad
-% \title{DavidAwad}
+\title{DavidAwad} % document title
 \documentclass[12pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking} % options 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}    % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{banking} 
+% options 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% \moderncvcolor{blue}
+% predefined color options 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage[utf8]{inputenc} 
-\usepackage[scale=0.90]{geometry}
-% if you want to change the width of the column with the dates
+\usepackage[scale=0.85]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
 \usepackage{import}
+\usepackage{xcolor}
 
-\name{David}{Awad}
+% Fonts 
+\usepackage{raleway}
+\newfontfamily{\playfair}{PlayfairDisplay-Bold.ttf}
+\newcommand{\PF}{ \playfair }
 
-\phone[mobile]{732-925-4874}
-\email{contact@davidawad.com}
-\homepage{www.davidawad.com}
-\extrainfo{\url{https://github.com/davidawad/}}
-\address{U.S. Citizen of Edison, NJ, 08817}{}{}
+\defaultfontfeatures{Ligatures=TeX} 
+
+% color definitions
+\definecolor{PrussianBlue}{RGB}{11, 60, 93}
+\definecolor{SkyBlue}{RGB}{50, 140, 193}
+\definecolor{IvoryBlack}{RGB}{29, 39, 49}
+\definecolor{GoldLeaf}{RGB}{217, 179, 16}
+
+% color aliases for readability
+\colorlet{letterhead}{PrussianBlue}
+\colorlet{bodytext}{IvoryBlack}
+\colorlet{accents}{SkyBlue}
+\colorlet{link-accents}{GoldLeaf}
+
+% set colors in template using our predefined colors
+\colorlet{color0}{bodytext}
+\colorlet{color1}{accents}
+\colorlet{color2}{letterhead}
+
+
+\name{\PF{David}}{\PF{Awad}} 
+% \phone[mobile]{+1 (732) 925 - 4874}
+\email{david@awad.io} 
+\homepage{davidawad.com}
+\extrainfo{\color{link-accents}\url{github.com/davidawad}}
+\address{Edison, NJ, 08817}{}{}
+
 % \quote{"Maybe our favorite quotations say more about us than the stories and people we're quoting" - John Green}
 
+% end preamble
 \begin{document}
 \makecvtitle
 
@@ -25,7 +54,6 @@
 \begin{itemize}
 \item{\textbf{Bachelors of Science, Computer Science and Physics -- Rutgers University -- May 2016}} 
 \item{\textbf{Nanodegree, Self Driving Car Engineering  -- Udacity -- August 2017}}
-% \item{ \textbf{Bachelors of Science, Computer Science and Physics -- Rutgers University -- May 2016,  GPA: 2.9}}
 \end{itemize}
 
 % EXPERIENCE
@@ -33,14 +61,35 @@
 \section{Experience}
 \begin{itemize}
 
-\item{\cventry{May 2016 -- November 2016}{\href{http://tumblr.com/}{Tumblr}}{Software Release Engineer}{New York City}{}{
-\vspace{0pt}
-I developed and maintained Tumblr internal deploy processes, developer build tools, source control wrappers, deploy reporting and statistics, and internal build group productivity tools. I developed web based tools to report on build, branch, and project status for use by developers and product managers throughout the company. Experience with containerized services and deployments on Apache Mesos, using Docker and Python.  
+% Provide vision and path for the continued development of the company's technologies.
+% Build and maintain relationship with printed electronics convertors/manufacturers. Customer development and management.
+% Develop new technologies based on printed electronics within general core competency. Hire, train, and manage technical/engineering staff.
+
+\item{\cventry{May 2016 -- }{\href{http://armnewbrunswick.org/}{\color{link-accents}Archangel Raphael's Mission}}{Co-Founder and CTO}{New Brunswick}{}{
+  \begin{itemize}
+    \item{Technical lead, orchestrating digital strategy, embracing best engineering practices in our open source and internal projects.}
+    \item{Responsible for creating a positive culture for our small team of developers and managing projects as we build out our online platform and internal tools primarily in Python.}
+  \end{itemize}
 }}
 
-\item{\cventry{November 2015 -- November 2016}{\href{http://mlh.io/}{Major League Hacking}}{Hackathon Coach}{New York City}{}{
-\vspace{0pt} 
-I travel internationally to college student hackathons as a representative of Major League Hacking. This comes with a lot of experience giving both technical and nontechnical presentations to promote brand recognition and good outward facing public relations. I assist engineering students with rapidly prototyping their ideas and troubleshoot all kinds of different software and hardware projects at various events along with other engineers and developers from other companies across industry.
+% \item{\cventry{April 2017 -- }{\href{http://csfcorp.com/}{\color{link-accents}CSF Corporation}}{Software Engineer}{Somerset, NJ}{}{
+% Blah blah blah I work here too ~ 
+% }}
+
+
+\item{\cventry{May 2016 -- November 2016}{\href{http://tumblr.com/}{\color{link-accents}Tumblr}}{Software Release Engineer}{New York City}{}{
+  \begin{itemize}
+    \item{Built internal deploy processes, build tools, source control wrappers, deploy reporting, statistics, and internal build group productivity tools.}
+    \item{Experience with containerized services and deployments on Apache Mesos, using Docker and Python.}
+  \end{itemize}
+% I developed web based tools to report on build, branch, and project status for use by developers and product managers throughout the company. 
+}}
+
+\item{\cventry{November 2015 -- November 2016}{\href{http://mlh.io/}{\color{link-accents}Major League Hacking}}{Hackathon Coach}{New York City}{}{
+  \begin{itemize}
+    \item{Traveled internationally to college student hackathons and provided both technical and nontechnical presentations to better the student hacking community.}
+    \item{Assisted engineering students with rapidly prototyping their ideas and troubleshooting all kinds of different software and hardware projects along with other engineers and developers from other companies across industry}
+  \end{itemize}
 }}
 
 
@@ -51,24 +100,20 @@ I travel internationally to college student hackathons as a representative of Ma
 
 % For example: "Very Customer Focused" vs. "Customer Focus: During one project dealt with the client on a weekly basis, clarifying requirements and demonstrating prototypes over the entire project lifespan. This helped to build trust and contributed to being offered further work from this client."
 
-
 % \item{\cventry{October 2015 --}{\href{http://arm.com/}{Archangel Raphael's Mission}}{Co-Founder and Technical Lead}{New Brunswick}{}{
 % \vspace{0pt} 
 % }}
 
 %\item{\cventry{October 2015 -- May 2016}{\href{http://sendgrid.com/}{SendGrid}}{Developer Evangelist}{Denver, Colorado Remotely}{}{\vspace{3pt} I travel across the country as a representative of SendGrid's engineering team. There was a strong focus on establishing good outward facing public relations for SendGrid as well as preparing both technical and nontechnical presentations on SendGrid's technology and working both on open source and with client company developers and engineers using SendGrid's technology for implementing and prototyping ideas, and applications at various developer conferences, hackathons, and events.}}
 
-% TODO PAST TENSE, MAKE WORDING CONSISTENT
-% TODO add ARM to resume
-\item{\cventry{September 2015 -- May 2016}{\href{http://codecademy.com/}{Codecademy}}{Codecademy Advisor}{New York city, Remotely}{}{
-\vspace{0pt} 
-Provided guidance and support for students first learning to code through the codecademy platform by helping them by work through potential errors in code as well as teaching anything from basic programming to computer science and data structures. Tracked issues and worked with product team for consistent improvement of product based on user feedback.
+\item{\cventry{September 2015 -- May 2016}{\href{http://codecademy.com/}{\color{link-accents}Codecademy}}{Codecademy Advisor}{New York city}{}{
+Provided guidance and support for students first learning to code through the Codecademy platform by helping them by work through potential errors in code as well as teaching anything from basic programming to computer science and data structures. Tracked issues and worked with product team for consistent improvement of product based on user feedback.
 }}
 
-\item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{MailChimp}}{Infrastructure Engineering Intern}{Atlanta}{}{
-\vspace{0pt} 
-Responsible for improving and building internal tools to keep track of all of our production hardware. Writing a rest API to automate the provisioning and deployment our production datacenter servers. Extensive monitoring of all server traffic, and load balancing as they grew to receive over 6,000 requests per second. In addition I was using performance monitoring and performed data research on the size vs. query speed to improve efficiency by at least 6\% on our dedicated database servers for paid users.
-}}
+% \item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{\color{link-accents}MailChimp}}{Infrastructure Engineering Intern}{Atlanta}{}{
+% \vspace{0pt} 
+% Responsible for improving and building internal tools to keep track of all of our production hardware. Writing a rest API to automate the provisioning and deployment our production datacenter servers. Extensive monitoring of all server traffic, and load balancing as they grew to receive over 6,000 requests per second. In addition I was using performance monitoring and performed data research on the size vs. query speed to improve efficiency by at least 6\% on our dedicated database servers for paid users.
+% }}
 
 %\item{\cventry{June 2015 -- July 2015}{\href{http://www.cdc.gov/}{United States Center for Disease Control and Prevention.}}{Software Engineering Consultant}{Atlanta, Georgia}{}{\vspace{3pt} I assisted in drafting an entirely new REST API to replace an outdated SOAP API accessing the CDC's open health data.}}
 
@@ -80,12 +125,11 @@ Responsible for improving and building internal tools to keep track of all of ou
 \section{Skills}
 
 \begin{itemize}
-
 \item{\textbf{Programming / Scripting Languages:} \textit{Python, C, JavaScript, Java, Shell}}
 \vspace{3pt}
 
-\item{\textbf{Markup Languages:}\textit{ HTML5, CSS3, SASS/SCSS, Markdown, LaTeX, XML, HAML, Jade }}
-\vspace{3pt}
+% \item{\textbf{Markup Languages:}\textit{ HTML5, CSS3, SASS/SCSS, Markdown, LaTeX, XML, HAML, Jade }}
+% \vspace{3pt}
 
 \item{\textbf{Frameworks / Libraries:}\textit{ Flask, Foundation / Bootstrap, jQuery, React.JS, Android, Angular.JS, Stripe, Express, Casper, Arduino}}
 \vspace{3pt}
@@ -93,53 +137,49 @@ Responsible for improving and building internal tools to keep track of all of ou
 \item{\textbf{Database Systems:}\textit{ Redis, etcd, MongoDB, MySQL}}
 \vspace{3pt}
 
-\item{\textbf{Infrastructure Tools:}\textit{ Jenkins, Travis-CI, Docker, Puppet, Heroku, NGINX, Vagrant, Apache2, Amazon EC2, S3}}
+\item{\textbf{Infrastructure Tools:}\textit{ Jenkins, Travis-CI, Docker, Puppet, Heroku, NGINX, Vagrant, AWS}}
 \vspace{3pt}
 
-\item{\textbf{Graphics Tools:}\textit{ Unity, Blender, GIMP, Inkscape}}
-\vspace{3pt}
+% \item{\textbf{Graphics Tools:}\textit{ Unity, Blender, GIMP, Inkscape}}
+% \vspace{3pt}
 
-% Add Excel?
+% PAGE BREAK
+
+\iffalse
+
 \item{\textbf{Coursework:}
 \textit{ Quantum Mechanics, Quantum Computing, Artificial Intelligence, Algorithms, Operating Systems Design, Systems Programming, Computer Architecture, Electricity and Magnetism, Internet Protocols, Solid State Physics, Database Management Systems, Astrophysics, Discrete Mathematics, Discrete Probability, Data Structures, Web Design.
 }}
 
-\end{itemize}
+\fi 
 
-% PAGE BREAK HERE.
+\end{itemize}
 
 \subsection{Personal Projects}
 \vspace{5pt}
 
 \begin{itemize}
 
-% TODO add Lane Lines here
-
-% TODO add tensorflow networks on here
+% TODO add Lane Lines project here
+% TODO add Tensorflow networks on here
 
 \item{\textbf{\href{https://github.com/davidawad/lane-detection}{lane detection}}\textit{ This is a small project that identifies lane lines given an image still from a typical asphalt road. The algorithm uses Canny Edge Detection, to find all of the edges in the image based on color pixel value numerical gradients, it then converts these high contrast points to identify lines using Hough Transforms; and then uses linear regression to extrapolate and mark single lane lines on a road.}}
 
-
-\item{\textbf{\href{https://github.com/davidawad/vcluster}{vcluster}}\textit{ vcluster leverages the power of Vagrant to create a cluster of Virtual Machines from the command line running different operating systems that you can specify using YAML; this allows you to unittest for multiple platforms from a convenient CLI.}}
+\item{\textbf{\href{https://github.com/davidawad/vcluster}{vcluster}}\textit{ vcluster leverages the power of Vagrant to create a cluster of Virtual Machines from the command line running different operating systems that you can specify using YAML; this allows you to unittest for multiple platforms from a convenient cli.}}
 \vspace{5pt}
 
-% begin comment of proj.
 \iffalse 
-\item{\textbf{\href{http://github.com/davidawad/Quantum-Simulator}{Quantum Simulator}} \textit{ I currently maintain a quantum computation simulator written in python to replicate the effects of quantum logical gates on quantum bits in order to asses changes in amplitudes and experiment on quantum algorithms.}}
-\vspace{5pt}
+  \item{\textbf{\href{http://github.com/davidawad/Quantum-Simulator}{Quantum Simulator}} \textit{ I currently maintain a quantum computation simulator written in python to replicate the effects of quantum logical gates on quantum bits in order to asses changes in amplitudes and experiment on quantum algorithms.}}
+  \vspace{5pt}
 
-\item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
-\vspace{5pt}
-\fi % these two projects are commented out
-
+  \item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
+  \vspace{5pt}
+\fi
 
 \item{\textbf{\href{http://github.com/davidawad/blocky}{blocky}} \textit{ 
 Blocky is a small, well polished android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. It uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables quick ease of use and convenience to accept payments on your mobile phone, while also solving the problem of having your Bitcoin wallet exclusively on your phone. This project won the Cyanogen Prize at HackThePlanet in 2015.
 }}
 
-\vspace{5pt}
-
-\item{\textbf{I have over 100 Free and Open Source Software Projects available on \href{https://github.com/davidawad}{GitHub}.}}
 
 \end{itemize}
 
@@ -148,53 +188,50 @@ Blocky is a small, well polished android plugin for devices running CyanogenMod 
 
 \item{\cventry{}{Various Prizes}{Hackathon Experience}{Major League Hacking}{{}} {Second Place Overall HackNJIT '14, Third Place Overall HackRU '13, IBM Bluemix Prize HackNY '15, CyanogenMod Prize HackThePlanet '15}}
 
+% \item{\cventry{}{ \href{armnewbrunswick.org}{Archangel Raphael's Mission}}{Co-Founder}{}{{Technical Lead}}{Serving as technical lead of {\color{link-accents}\href{armnewbrunswick.org}{ARM}}, a small New Brunswick charity dedicated to creating community based outcome driven initiatives for the homeless population in Central New Jersey. }}
+
 \item{\cventry{}{Scholarship Recipient}{\href{https://access.rutgers.edu/lsamp}{LSAMP} Scholar}{}{\textit{}}{}}
 \item{\cventry{}{Teaching Assistantship}{TA Experience}{}{\textit{}}{PSY 90 introductory Positive Psychology course Course on happiness for first year students.}}  
 
-\item{\cventry{}{ \href{ }{Archangel Raphael's Mission}}{Co-Founder}{}{ { Technical Lead } }{I work as the technical lead of a small New Brunswick charity dedicated to creating community based outcome driven initiatives for the homeless population in Central New Jersey. }}
-
 \item{\cventry{}{ \href{http://www.rwjuh.edu/rwjuh/home.aspx}{Robert Wood Johnson}}{Lead App Developer }{}{ {Pro Bono lead developer} }{I worked pro bono as the lead developer on a Python Django application that improved service and organization for attending doctors at the Promise Clinic which provides free healthcare to the residents of New Brunswick.}}
 
-\item{\cventry{}{ Rutgers University Judo Club}{Public Relations Manager, Web Designer and Developer }{}{ {Managed and Improve the data, website, and social media of the Rutgers Judo Club.} }{}}
+\item{\cventry{}{Rutgers University Judo Club}{Public Relations Manager, Web Designer and Developer }{}{{}}{Managed the architecture, data, design, website, and social media of the Rutgers Judo Club.}}
 
 \item{\cventry{}{ \href{http://gleeclub.rutgers.edu/}{Rutgers University Glee Club}}{Technological Coordinator}{}{{Responsible for maintaining our data.}}{Such as the website, IT support and Data Management, Email Lists, etc.}}
 
-\item{\cventry{}{Rutgers University Student Alliance of Computer Scientists}{\href{http://hackru.org/}{Hackathon Organizer} } {}{ {A member of the team responsible for } }{all organizational aspects of planning the Bi-Annual Hackathon, HackRU.}}
+\item{\cventry{}{Rutgers University Student Alliance of Computer Scientists}{\href{http://hackru.org/}{Hackathon Organizer}} {}{ {A member of the team responsible for } }{all organizational aspects of planning the Bi-Annual Hackathon, HackRU.}}
 
-\item{\cventry{}{Rutgers University Security of Information Club}{Founding Member}{}{{specializing in cyber security for embedded systems.}}{}}
+% \item{\cventry{}{Rutgers University Security of Information Club}{Founding Member}{}{{specializing in cyber security for embedded systems.}}{}}
 
 \end{itemize}
 
-% research blurb
 \iffalse
-\section{Research}
-\begin{itemize}
-\item{I currently assist with research under professor Abdelslam Boularias doing research in computer vision. We have been working towards using the leap motion and various machine learning techniques to create robots that can assist and replicate physical labor and construction of objects being performed by the human hands.}
-\end{itemize}
-\fi 
-% end comment
-
-\iffalse % begin comment for interests section
-
-\section{Interests}
-\begin{itemize}
-
-% TODO ADD interest in superconductors 
-% \item{I have a huge interest in superconductors and  } 
-
-\item{I have been trained in singing for over seven years. Being in numerous choral groups I've traveled on tour to multiple cities on the east coast for performances and competitions such as Chicago, Illinois, and more recently Baltimore, Maryland. I also study Judo and have competed in multiple competitive tournaments with the Rutgers University Judo Team.} 
-
-\item{In high school I performed in four years of Musical and Improvisational Comedic Theater, having placed in the top 5 in the STANJ competition for Comedic Scenes. I was also on the varsity soccer team for three years.}
-
-\end{itemize}
+  \section{Research}
+  \begin{itemize}
+  \item{I currently assist with research under professor Abdelslam Boularias doing research in computer vision. We have been working towards using the leap motion and various machine learning techniques to create robots that can assist and replicate physical labor and construction of objects being performed by the human hands.}
+  \end{itemize}
 \fi
 
-% \iffalse % begin comment
-% \fi % end comment
+\iffalse 
+  \section{Interests}
+  \begin{itemize}
+
+  % TODO ADD interest in superconductors 
+  % \item{I have some huge interest in superconductors and blah blah blah } 
+
+  \item{I have been trained in singing for over seven years. Being in numerous choral groups I've traveled on tour to multiple cities on the east coast for performances and competitions such as Chicago, Illinois, and more recently Baltimore, Maryland. I also study Judo and have competed in multiple competitive tournaments with the Rutgers University Judo Team.} 
+
+  \item{In high school I performed in four years of Musical and Improvisational Comedic Theater, having placed in the top 5 in the STANJ competition for Comedic Scenes. I was also on the varsity soccer team for three years.}
+
+  \end{itemize}
+\fi
 
 \nocite{*}
 \bibliographystyle{plain}
-\bibliography{publications}         
+\bibliography{publications}  
+
+\lfoot{ \hspace{1pt} \color{letterhead} last edited: \today }
+
 \end{document}
 
 % Resume Writing Resources
