@@ -11,6 +11,11 @@
 \usepackage{fontspec}
 \usepackage{import}
 \usepackage{xcolor}
+\usepackage{xpatch}
+\usepackage{etoolbox}
+
+%% Adding a negative space after \makecvtitle to reduce the white space after it
+\xapptocmd{\makecvtitle}{\vspace*{-1.5\baselineskip}}{}{}
 
 % Fonts 
 \usepackage{raleway}
@@ -68,7 +73,7 @@
 \item{\cventry{May 2016 -- }{\href{http://armnewbrunswick.org/}{\color{link-accents}Archangel Raphael's Mission}}{Co-Founder and CTO}{New Brunswick}{}{
   \begin{itemize}
     \item{Technical lead, orchestrating digital strategy, embracing best engineering practices in our open source and internal projects.}
-    \item{Responsible for creating a positive culture for our small team of developers and managing projects as we build out our online platform and internal tools primarily in Python.}
+    \item{Responsible for creating a positive culture for our small team of developers and managing projects as we build our online platform and internal tools primarily in Python.}
   \end{itemize}
 }}
 
@@ -88,7 +93,7 @@
 \item{\cventry{November 2015 -- November 2016}{\href{http://mlh.io/}{\color{link-accents}Major League Hacking}}{Hackathon Coach}{New York City}{}{
   \begin{itemize}
     \item{Traveled internationally to college student hackathons and provided both technical and nontechnical presentations to better the student hacking community.}
-    \item{Assisted engineering students with rapidly prototyping their ideas and troubleshooting all kinds of different software and hardware projects along with other engineers and developers from other companies across industry}
+    \item{Assisted engineering students with rapidly prototyping their ideas and troubleshooting all kinds of different software and hardware projects along with other engineers and developers from other companies across industry.}
   \end{itemize}
 }}
 
@@ -107,7 +112,10 @@
 %\item{\cventry{October 2015 -- May 2016}{\href{http://sendgrid.com/}{SendGrid}}{Developer Evangelist}{Denver, Colorado Remotely}{}{\vspace{3pt} I travel across the country as a representative of SendGrid's engineering team. There was a strong focus on establishing good outward facing public relations for SendGrid as well as preparing both technical and nontechnical presentations on SendGrid's technology and working both on open source and with client company developers and engineers using SendGrid's technology for implementing and prototyping ideas, and applications at various developer conferences, hackathons, and events.}}
 
 \item{\cventry{September 2015 -- May 2016}{\href{http://codecademy.com/}{\color{link-accents}Codecademy}}{Codecademy Advisor}{New York city}{}{
-Provided guidance and support for students first learning to code through the Codecademy platform by helping them by work through potential errors in code as well as teaching anything from basic programming to computer science and data structures. Tracked issues and worked with product team for consistent improvement of product based on user feedback.
+  \begin{itemize}
+    \item{Provided guidance and support for students first learning to code through by helping them by work through potential errors in code as well as teaching anything from basic programming to computer science and data structures.}
+    \item{ Tracked issues and worked with product team for consistent improvement of product based on user feedback.}
+  \end{itemize}
 }}
 
 % \item{\cventry{May 2015 -- August 2015}{\href{http://mailchimp.com/}{\color{link-accents}MailChimp}}{Infrastructure Engineering Intern}{Atlanta}{}{
@@ -145,6 +153,7 @@ Provided guidance and support for students first learning to code through the Co
 
 % PAGE BREAK
 
+% PAGE BREAK
 \iffalse
 
 \item{\textbf{Coursework:}
@@ -161,25 +170,53 @@ Provided guidance and support for students first learning to code through the Co
 \begin{itemize}
 
 % TODO add Lane Lines project here
-% TODO add Tensorflow networks on here
+% TODO add behavioral cloning!!
 
-\item{\textbf{\href{https://github.com/davidawad/lane-detection}{lane detection}}\textit{ This is a small project that identifies lane lines given an image still from a typical asphalt road. The algorithm uses Canny Edge Detection, to find all of the edges in the image based on color pixel value numerical gradients, it then converts these high contrast points to identify lines using Hough Transforms; and then uses linear regression to extrapolate and mark single lane lines on a road.}}
-
-\item{\textbf{\href{https://github.com/davidawad/vcluster}{vcluster}}\textit{ vcluster leverages the power of Vagrant to create a cluster of Virtual Machines from the command line running different operating systems that you can specify using YAML; this allows you to unittest for multiple platforms from a convenient cli.}}
-\vspace{5pt}
-
-\iffalse 
-  \item{\textbf{\href{http://github.com/davidawad/Quantum-Simulator}{Quantum Simulator}} \textit{ I currently maintain a quantum computation simulator written in python to replicate the effects of quantum logical gates on quantum bits in order to asses changes in amplitudes and experiment on quantum algorithms.}}
-  \vspace{5pt}
-
-  \item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
-  \vspace{5pt}
-\fi
-
-\item{\textbf{\href{http://github.com/davidawad/blocky}{blocky}} \textit{ 
-Blocky is a small, well polished android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. It uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables quick ease of use and convenience to accept payments on your mobile phone, while also solving the problem of having your Bitcoin wallet exclusively on your phone. This project won the Cyanogen Prize at HackThePlanet in 2015.
+% lane detection
+\item{\textbf{\href{https://github.com/davidawad/lane-detection}{lane detection}}\textit{ 
+ - \href{https://github.com/davidawad/lane-detection }{\color{link-accents}https://github.com/davidawad/lane-detection}
+  \begin{itemize}
+    \item{identifies lane lines given an image still from a typical asphalt road. The algorithm uses Canny Edge Detection. Then finds all of the edges in the image based on color pixel value numerical gradients, it then converts these high contrast points to identify lines using Hough Transforms; and then uses linear regression to extrapolate and mark single lane lines on a road.}
+  \end{itemize}
 }}
 
+\vspace{5pt}
+
+% vcluster
+\item{\textbf{\href{https://github.com/davidawad/vcluster}{vcluster}}\textit{ 
+ - \href{https://github.com/davidawad/vcluster }{\color{link-accents}https://github.com/davidawad/vcluster}
+  \begin{itemize}
+    \item{Command line tool for rapid virtual machine provisioning on beefy machines.}
+    \item{leverages Vagrant to create a cluster of Virtual Machines from the command line running different operating systems based on a YAML config; enabling unit testing for multiple platforms from the command line.}
+    \item{Written as a part of PennApps Spring 2016.}
+  \end{itemize}
+}}
+
+\vspace{5pt}
+
+% blocky 
+\item{\textbf{\href{https://github.com/davidawad/blocky}{blocky}}\textit{ 
+ - \href{https://github.com/davidawad/blocky }{\color{link-accents}https://github.com/davidawad/blocky}
+  \begin{itemize}
+    \item{Brings bitcoin wallet QR code to android system UI.}
+    \item{Android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. Uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables faster wallet access for payments. }
+    \item{Received the Cyanogenmod Prize for best use of the Android SDK at Hack the Planet.}
+  \end{itemize}
+}}
+
+%\item{\textbf{\href{http://github.com/davidawad/blocky}{blocky}} \textit{ 
+%Blocky is a small, well polished android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. It uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables quick ease of use and convenience to accept payments on your mobile phone, while also solving the problem of having your Bitcoin wallet exclusively on your phone. This project won the Cyanogen Prize at HackThePlanet in 2015.
+%}}
+
+%  \item{\textbf{\href{http://github.com/davidawad/Quantum-Simulator}{Quantum Simulator}} \textit{ I currently maintain a quantum computation simulator written in python to replicate the effects of quantum logical gates on quantum bits in order to asses changes in amplitudes and experiment on quantum algorithms.}}
+%  \vspace{5pt}
+
+%  \item{\textbf{\href{http://insightweets.mybluemix.net/landing}{Insightweets}}\textit{ Insightweets is an app meant to gather insights about specific kinds of people in any geographic location using Twitter and machine learning. It queries Twitter for location based data and then processes it using machine learning. Built using NodeJS, Express, Jade, LESS, and the Twitter API. This project won the IBM Bluemix prize at HackNY in 2015.}}
+%  \vspace{5pt}
+
+% \item{\textbf{\href{http://github.com/davidawad/blocky}{blocky}} \textit{ 
+% Blocky is a small, well polished android plugin for devices running CyanogenMod to add a custom tile to the quick settings UI. It uses the Blockchain API to create a QR code for any Bitcoin Public Key that you provide. This enables quick ease of use and convenience to accept payments on your mobile phone, while also solving the problem of having your Bitcoin wallet exclusively on your phone. This project won the Cyanogen Prize at HackThePlanet in 2015.
+% }}
 
 \end{itemize}
 
