@@ -1,60 +1,111 @@
 % Cover Letter of Abanoub David Awad
-% \title{Cover_Letter_DavidAwad}
+\title{Cover-Letter-DavidAwad}
 \documentclass[12pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking} % options 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}    % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{banking} 
+% options 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% \moderncvcolor{blue}
+% predefined color options 'blue', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage[utf8]{inputenc} 
-\usepackage[scale=0.90]{geometry}
+\usepackage[scale=0.85]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
 \usepackage{import}
+\usepackage{xcolor}
+\usepackage{xpatch}
+\usepackage{etoolbox}
 
+% Fonts 
+\usepackage{raleway}
+\newfontfamily{\playfair}{PlayfairDisplay-Bold.ttf}
+\newcommand{\PF}{ \playfair }
 
-% Declare new commands 
- % sample new command
-\newcommand{\COMPANY}{CyberCoders}
-% new command for tabs
-\newcommand\tab[1][1cm]{\hspace*{#1}}
+\defaultfontfeatures{Ligatures=TeX} 
 
-\name{David}{Awad}
+% Colors
+\definecolor{PrussianBlue}{RGB}{11, 60, 93}
+\definecolor{SkyBlue}{RGB}{50, 140, 193}
+\definecolor{IvoryBlack}{RGB}{29, 39, 49}
+\definecolor{GoldLeaf}{RGB}{217, 179, 16}
 
-\phone[mobile]{732-925-4874}
-\email{contact@davidawad.com}
-\homepage{www.davidawad.com}
-\extrainfo{\url{https://github.com/davidawad/}}
-\address{U.S. Citizen of Edison, NJ, 08817}{}{}
+% color aliases for readability
+\colorlet{letterhead}{PrussianBlue}
+\colorlet{bodytext}{IvoryBlack}
+\colorlet{accents}{SkyBlue}
+\colorlet{link-accents}{GoldLeaf}
+
+% set colors in template using our predefined colors
+\colorlet{color0}{bodytext}
+\colorlet{color1}{accents}
+\colorlet{color2}{letterhead}
+
+\name{\PF{David}}{\PF{Awad}} 
+% \phone[mobile]{+1 (732) 925 - 4874}
+\email{david@awad.io}
+\homepage{davidawad.com}
+\extrainfo{\color{link-accents}\url{github.com/davidawad}}
+\address{Edison, NJ, 08817}{}{}
+
 
 \begin{document}
 
-% Letter Addressed to
-\recipient{\COMPANY{}}{ 90 Park Ave \#1702\\ New York, NY 10016} 
+% VARIABLES 
+\newcommand{\fullname}{Abanoub David Awad}						  	  % your full name 
+\newcommand{\cellphone}{+1 (732) 925-4874} 						      % your contact number 
+\newcommand{\school}{Rutgers} 										  % your school
+\newcommand{\position}{Fullstack Engineer} 							  % what's the position?
+\newcommand{\company}{MongoDB}  									  % name of the company you're applying to.
+\newcommand{\impressivething}{open source work} 					  % what do they do well?
+\newcommand{\companyaddress}{90 Park Ave \#1702\\ New York, NY 10016} % where are they? 
+\newcommand{\field}{software}                                         % what field is this position in?
+
+% spacing fix for tabs
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+% letter addressed to: 
+\recipient{\company{}}{\companyaddress} 
+
 % Letter date
 \date{\today}
-\opening{\textbf{Dear recruiting team at \COMPANY{},}} 
 
-% closing has to be here?
-\closing{Thank you for taking the time to consider me. It means the world to me and I hope to hear from you soon.}
+% FIXME toggle manager based on if manager is defined
+\newtoggle{manager}
+
+\toggletrue{manager}
+% \togglefalse{manager}
+
+\iftoggle{manager}{%
+  \newcommand{\addressee}{Matthew Leva}
+}{ % else {  % no manager specified, use more general addressee
+  \newcommand{\addressee}{recruiting team at \company}
+}
+
+% dear blah blah blah ~
+\opening{\textbf{Dear \addressee:}} 
  
-\makelettertitle % Print letter title
+\makelettertitle % letterhead
 
-Please accept my resume in the hopes of exploring the possibilities of joining you.
+\tab It is with great enthusiasm that I submit my application for the position of \position{} at \company{}. Working for \company{} has always been a dream of mine since I started studying at \school. As an avid \position{}, I understand firsthand the qualities that have allowed you to earn your reputation as an industry leader in the \field{} space. For the past few years, I’ve been extremely impressed by your \impressivething{} and now I want to help contribute and join \company{} as an employee.
 
-\tab My first engineering position was as a sophomore in 2014. I have went on to write source control wrappers, query size optimization scripts, and monitoring and internal tools for companies such as MailChimp, Codecademy, and Tumblr. I am fortunate to have had the opportunity to grow in all of these different roles and work on all kinds of different problems from web application development to software release engineering. I’ve had the opportunity to communicate with plenty of engineers and non-engineers alike.
+% \tab My first engineering position was as a sophomore in 2014. I went on to write source control wrappers, query size optimization scripts, monitoring, and internal tools for companies such as MailChimp, Codecademy, and Tumblr. I am fortunate to have had the opportunity to grow in all of these different roles and work on all kinds of different problems from web application development to software release engineering. I’ve had the opportunity to communicate with plenty of engineers and non-engineers alike.
 
-\tab Known for excellent public speaking skills, I have been given the opportunity as a Developer Evangelist for SendGrid and a Hackathon Coach with Major League Hacking to travel to different college student hackathons across the United States and Canada. I’ve learned a diverse set of skills from event management and organization mentoring all kinds of engineering ideas and personal projects from superconducting qubits to torrent based datacenter deployment prototypes.
+\tab Known for excellent public speaking skills, I have been given the opportunity as a Developer Evangelist for SendGrid and a Hackathon Coach with Major League Hacking to travel to different college student hackathons across the United States and Canada. I’ve learned a diverse set of skills from event management and organization to mentoring all kinds of engineering ideas and personal projects from superconducting qubits to torrent based datacenter deployment prototypes. I derive a lot of personal satisfaction from using the latest in proven industry tools and using them to improve engineering efforts for the teams I'm a part of. 
 
-\tab My technical expertise includes cross-platform proficiency; fluency in various scripting/programming languages (including C, Python, JavaScript, Java, HTML/CSS and SQL);  I’ve built plenty of fun personal projects with technology like Unity, VR, GIMP, and basic NLP for poetry generation. I have an advanced knowledge of developer applications, tools, methodologies and best practices (including OOD, client/server architecture and test automation). I enjoy rock-solid continuous integration and deployment using tools like Travis, Jenkins, Docker, Mesos, SaltStack and CoreOS.
+\tab Recently, the marketing director of CSF approached me to improve the design of our product for more brand consistency. Using modern frontend tools I decreased the pageweight of each page by 32\% in less than one week. After this I was asked to implement enhancements to product. I immediately began to research new tools for build and continuous deployment and provided my team members with a Docker image of our product. Today our team supports over 200 customers in performance matters and can create lightweight and production ready environments in minutes. I am convinced that I can bring the same knowledge and leadership to \company. 
 
-\tab It is my belief that my experience teaching and developing user-friendly solutions on time would enable me to step into an engineering role at \COMPANY{} and hit the ground running.
-Feel free to reach out to me at (732) 925-4874. Thank you so much for your time and I look forward to hearing from you!
 
-% \makeletterclosing % Print letter signature
 
-\begin{flushright}
+% \tab My technical expertise includes cross-platform proficiency; fluency in various scripting/programming languages (including C, Python, JavaScript, Java, HTML/CSS and SQL);  I’ve built plenty of fun personal projects with technology like Unity, VR, GIMP, and basic NLP for poetry generation. I have an advanced knowledge of developer applications, tools, methodologies and best practices (including OOD, client/server architecture and test automation). I enjoy rock-solid continuous integration and deployment, and in my free time I build with tools like Travis, Jenkins, Docker, Mesos, SaltStack and CoreOS. 
+
+\tab It is my belief that my experience teaching and developing user-friendly solutions on time would enable me to step into an engineering role at \company{} and hit the ground running.
+Feel free to reach out to me at \cellphone. Thank you so much for your time and I look forward to hearing from you!
+
+% signature and sincerity ~ 
+\begin{flushleft}
 Sincerely, yours \\
-	\textbf{Abanoub David Awad}
+	\textbf{\fullname}
 \\
 \includegraphics[width=50mm]{sig.png}
-\end{flushright}
+\end{flushleft}
 
 
 \nocite{*}
